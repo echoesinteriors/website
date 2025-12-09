@@ -1,0 +1,76 @@
+/* ============================================
+   ICON SYSTEM
+   Better SVG icons for the website
+   ============================================ */
+
+.icon {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    fill: currentColor;
+    stroke: currentColor;
+}
+
+.icon-sm {
+    width: 16px;
+    height: 16px;
+}
+
+.icon-md {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-lg {
+    width: 32px;
+    height: 32px;
+}
+
+.icon-xl {
+    width: 48px;
+    height: 48px;
+}
+
+.icon-2xl {
+    width: 64px;
+    height: 64px;
+}
+
+/* Icon colors */
+.icon-primary {
+    color: var(--color-accent-warm);
+}
+
+.icon-secondary {
+    color: var(--color-accent-cool);
+}
+
+.icon-white {
+    color: white;
+}
+
+/* Icon backgrounds */
+.icon-bg {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-full);
+    padding: var(--space-3);
+}
+
+.icon-bg-warm {
+    background: linear-gradient(135deg, var(--color-accent-warm), var(--color-accent-warm-dark));
+    color: white;
+}
+
+.icon-bg-cool {
+    background: linear-gradient(135deg, var(--color-accent-cool), var(--color-accent-cool-dark));
+    color: white;
+}
+
+.icon-bg-primary {
+    background: var(--color-accent-warm-glow);
+    color: var(--color-accent-warm);
+}
+

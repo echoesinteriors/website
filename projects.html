@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore our portfolio of stunning interior design projects in Bangalore. See how we've transformed spaces with style and elegance.">
+  <title>Our Projects - Echoes Interior Solutions | Portfolio</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/icons.css">
+  
+  <!-- Scripts -->
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/navigation.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="navbar-brand">
+          <img src="assets/images/echoes-logo-horizontal.png" alt="Echoes Interior Solutions" style="height: 45px; width: auto;">
+        </a>
+        
+        <ul class="navbar-nav">
+          <li><a href="index.html" class="navbar-link">Home</a></li>
+          <li><a href="services/painting.html" class="navbar-link">Services</a></li>
+          <li><a href="projects.html" class="navbar-link active">Projects</a></li>
+          <li><a href="about.html" class="navbar-link">About</a></li>
+          <li><a href="contact.html" class="navbar-link">Contact</a></li>
+          <li>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+              <span class="theme-toggle-slider"></span>
+            </button>
+          </li>
+        </ul>
+        
+        <button class="navbar-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" style="min-height: 60vh;">
+    <div class="hero-background">
+      <img src="assets/images/hero-background.png" alt="Interior design projects" loading="eager">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content" data-animate>
+      <h1 class="hero-title">Our Projects</h1>
+      <p class="hero-subtitle">
+        Discover the beautiful spaces we've created for our clients across Bangalore.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: var(--space-12);" data-animate>
+        <h2>Featured Projects</h2>
+        <p style="max-width: 700px; margin: 0 auto; font-size: var(--text-lg); color: var(--color-text-secondary);">
+          Each project is a unique story of transformation, combining style, functionality, and personal expression.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="service-card" data-animate>
+          <div class="service-card-content">
+            <div style="width: 100%; height: 250px; background: linear-gradient(135deg, var(--color-accent-warm), var(--color-accent-warm-dark)); border-radius: var(--radius-lg); margin-bottom: var(--space-4); display: flex; align-items: center; justify-content: center; color: white; font-size: var(--text-4xl);">🏠</div>
+            <h3 class="service-card-title">Modern Minimalist Apartment</h3>
+            <p class="service-card-description">
+              A 3BHK apartment transformed with clean lines, neutral tones, and smart storage solutions. The design maximizes space while maintaining an elegant, uncluttered aesthetic.
+            </p>
+            <div style="display: flex; gap: var(--space-2); margin-top: var(--space-4); flex-wrap: wrap;">
+              <span style="padding: var(--space-1) var(--space-3); background: var(--color-surface-elevated); border-radius: var(--radius-full); font-size: var(--text-sm);">Interior Design</span>
+              <span style="padding: var(--space-1) var(--space-3); background: var(--color-surface-elevated); border-radius: var(--radius-full); font-size: var(--text-sm);">Furniture</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="service-card" data-animate>
+          <div class="service-card-content">
+            <div style="width: 100%; height: 250px; background: linear-gradient(135deg, var(--color-accent-cool), var(--color-accent-cool-dark)); border-radius: var(--radius-lg); margin-bottom: var(--space-4); display: flex; align-items: center; justify-content: center; color: white; font-size: var(--text-4xl);">🛏️</div>
+            <h3 class="service-card-title">Luxury Walk-in Wardrobe</h3>
+            <p class="service-card-description">
+              A custom-designed walk-in wardrobe featuring premium materials, intelligent organization systems, and elegant lighting. Perfect blend of luxury and functionality.
+            </p>
+            <div style="display: flex; gap: var(--space-2); margin-top: var(--space-4); flex-wrap: wrap;">
+              <span style="padding: var(--space-1) var(--space-3); background: var(--color-surface-elevated); border-radius: var(--radius-full); font-size: var(--text-sm);">Wardrobe</span>
+              <span style="padding: var(--space-1) var(--space-3); background: var(--color-surface-elevated); border-radius: var(--radius-full); font-size: var(--text-sm);">Custom Design</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="service-card" data-animate>
+          <div class="service-card-content">
+            <div style="width: 100%; height: 250px; background: linear-gradient(135deg, var(--color-brand-charcoal), var(--color-brand-dark)); border-radius: var(--radius-lg); margin-bottom: var(--space-4); display: flex; align-items: center; justify-content: center; color: white; font-size: var(--text-4xl);">🎨</div>
+            <h3 class="service-card-title">Complete Home Renovation</h3>
+            <p class="service-card-description">
+              Full home makeover including painting, wallpaper installation, furniture design, and bathroom renovation. A cohesive design that flows throughout the entire space.
+            </p>
+            <div style="display: flex; gap: var(--space-2); margin-top: var(--space-4); flex-wrap: wrap;">
+              <span style="padding: var(--space-1) var(--space-3); background: var(--color-surface-elevated); border-radius: var(--radius-full); font-size: var(--text-sm);">Renovation</span>
+              <span style="padding: var(--space-1) var(--space-3); background: var(--color-surface-elevated); border-radius: var(--radius-full); font-size: var(--text-sm);">Painting</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 4 -->
+        <div class="service-card" data-animate>
+          <div class="service-card-content">
+            <div style="width: 100%; height: 250px; background: linear-gradient(135deg, var(--color-accent-warm-light), var(--color-accent-warm)); border-radius: var(--radius-lg); margin-bottom: var(--space-4); display: flex; align-items: center; justify-content: center; color: white; font-size: var(--text-4xl);">🛋️</div>
+            <h3 class="service-card-title">Contemporary Living Room</h3>
+            <p class="service-card-description">
+              A stunning living room transformation with custom furniture, designer wallpapers, and carefully curated accessories. Modern elegance meets comfort.
+            </p>
+            <div style="display: flex; gap: var(--space-2); margin-top: var(--space-4); flex-wrap: wrap;">
+              <span style="padding: var(--space-1) var(--space-3); background: var(--color-surface-elevated); border-radius: var(--radius-full); font-size: var(--text-sm);">Furniture</span>
+              <span style="padding: var(--space-1) var(--space-3); background: var(--color-surface-elevated); border-radius: var(--radius-full); font-size: var(--text-sm);">Wallpaper</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 5 -->
+        <div class="service-card" data-animate>
+          <div class="service-card-content">
+            <div style="width: 100%; height: 250px; background: linear-gradient(135deg, var(--color-accent-cool-light), var(--color-accent-cool)); border-radius: var(--radius-lg); margin-bottom: var(--space-4); display: flex; align-items: center; justify-content: center; color: white; font-size: var(--text-4xl);">🚿</div>
+            <h3 class="service-card-title">Spa-Inspired Bathroom</h3>
+            <p class="service-card-description">
+              A luxurious bathroom renovation featuring premium tiles, modern fixtures, and waterproofing solutions. Transform your daily routine into a spa experience.
+            </p>
+            <div style="display: flex; gap: var(--space-2); margin-top: var(--space-4); flex-wrap: wrap;">
+              <span style="padding: var(--space-1) var(--space-3); background: var(--color-surface-elevated); border-radius: var(--radius-full); font-size: var(--text-sm);">Bathroom</span>
+              <span style="padding: var(--space-1) var(--space-3); background: var(--color-surface-elevated); border-radius: var(--radius-full); font-size: var(--text-sm);">Renovation</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 6 -->
+        <div class="service-card" data-animate>
+          <div class="service-card-content">
+            <div style="width: 100%; height: 250px; background: linear-gradient(135deg, var(--color-brand-sand), var(--color-brand-beige)); border-radius: var(--radius-lg); margin-bottom: var(--space-4); display: flex; align-items: center; justify-content: center; color: var(--color-brand-charcoal); font-size: var(--text-4xl);">🏡</div>
+            <h3 class="service-card-title">Villa Interior Design</h3>
+            <p class="service-card-description">
+              Complete interior design for a luxury villa, including all rooms, custom furniture, and premium finishes. A cohesive design language throughout.
+            </p>
+            <div style="display: flex; gap: var(--space-2); margin-top: var(--space-4); flex-wrap: wrap;">
+              <span style="padding: var(--space-1) var(--space-3); background: var(--color-surface-elevated); border-radius: var(--radius-full); font-size: var(--text-sm);">Villa</span>
+              <span style="padding: var(--space-1) var(--space-3); background: var(--color-surface-elevated); border-radius: var(--radius-full); font-size: var(--text-sm);">Complete Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="section" style="background: var(--color-surface);">
+    <div class="container">
+      <div class="grid grid-cols-4 gap-8 text-center">
+        <div data-animate>
+          <div style="font-size: var(--text-5xl); font-weight: var(--weight-black); color: var(--color-accent-warm); margin-bottom: var(--space-2);" data-count="200">0</div>
+          <h4>Projects Completed</h4>
+        </div>
+        <div data-animate>
+          <div style="font-size: var(--text-5xl); font-weight: var(--weight-black); color: var(--color-accent-warm); margin-bottom: var(--space-2);" data-count="150">0</div>
+          <h4>Happy Clients</h4>
+        </div>
+        <div data-animate>
+          <div style="font-size: var(--text-5xl); font-weight: var(--weight-black); color: var(--color-accent-warm); margin-bottom: var(--space-2);" data-count="5">0</div>
+          <h4>Years Experience</h4>
+        </div>
+        <div data-animate>
+          <div style="font-size: var(--text-5xl); font-weight: var(--weight-black); color: var(--color-accent-warm); margin-bottom: var(--space-2);" data-count="98">0</div>
+          <h4>% Satisfaction</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section gradient-animated" style="background: linear-gradient(135deg, var(--color-brand-charcoal), var(--color-accent-warm)); color: white; text-align: center;">
+    <div class="container container-narrow" data-animate>
+      <h2 style="color: white; font-size: var(--text-4xl); margin-bottom: var(--space-6);">
+        Ready to Start Your Project?
+      </h2>
+      <p style="font-size: var(--text-xl); margin-bottom: var(--space-8); color: rgba(255, 255, 255, 0.9);">
+        Let's create something beautiful together. Get a free consultation today!
+      </p>
+      <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html" class="btn btn-lg" style="background: white; color: var(--color-brand-charcoal);">Get Free Consultation</a>
+        <a href="tel:+917899919673" class="btn btn-outline btn-lg" style="border-color: white; color: white;">Call +91 7899919673</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- Company Info -->
+        <div class="footer-section">
+          <h4>Echoes Interior Solutions</h4>
+          <p style="color: var(--color-text-secondary); margin-bottom: var(--space-4);">
+            Your journey to beautiful, budget-friendly interiors starts right here.
+          </p>
+          <div style="color: var(--color-text-secondary);">
+            <p>📍 Bangalore, India</p>
+            <p>📞 +91 7899919673</p>
+            <p>📞 +91 7975677058</p>
+            <p>✉️ info@echoesinterior.com</p>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h4>Services</h4>
+          <div class="footer-links">
+            <a href="services/painting.html" class="footer-link">Interior Design</a>
+            <a href="services/painting.html" class="footer-link">Personalized Furniture</a>
+            <a href="services/painting.html" class="footer-link">Wardrobes</a>
+            <a href="services/painting.html" class="footer-link">House Painting</a>
+            <a href="services/waterproofing.html" class="footer-link">Bathroom Renovation</a>
+            <a href="services/painting.html" class="footer-link">Wallpapers</a>
+          </div>
+        </div>
+        
+        <!-- Company -->
+        <div class="footer-section">
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="projects.html" class="footer-link">Our Projects</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+            <a href="https://www.instagram.com/echoes_interior/" target="_blank" class="footer-link">Instagram</a>
+          </div>
+        </div>
+        
+        <!-- Business Hours -->
+        <div class="footer-section">
+          <h4>Business Hours</h4>
+          <div style="color: var(--color-text-secondary);">
+            <p>Monday - Saturday: 9:00 AM - 6:00 PM</p>
+            <p>Sunday: By Appointment</p>
+            <p style="margin-top: var(--space-4); font-style: italic;">#EchoesInteriorSolutions #InteriorDesignBangalore</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Echoes Interior Solutions. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
