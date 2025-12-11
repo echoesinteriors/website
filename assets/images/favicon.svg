@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="12" fill="#0C0C0C"/>
+  <g fill="#C6A667">
+    <!-- Arc waves -->
+    <path d="M12 38c0-11 8.954-20 20-20v4c-8.837 0-16 7.163-16 16h-4z"/>
+    <path d="M18 38c0-7.732 6.268-14 14-14v4c-5.523 0-10 4.477-10 10h-4z"/>
+    <path d="M24 38c0-4.418 3.582-8 8-8v4c-2.21 0-4 1.79-4 4h-4z"/>
+    <!-- E shape -->
+    <path d="M30 22h5v20h-5V22z"/>
+    <path d="M30 22h14v4H30v-4z"/>
+    <path d="M30 30h10v4H30v-4z"/>
+    <path d="M30 38h14v4H30v-4z"/>
+    <!-- Vertical bar -->
+    <path d="M42 14h4v32h-4V14z"/>
+  </g>
+</svg>
+

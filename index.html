@@ -3,37 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Echoes Interior Solutions - Your journey to beautiful, budget-friendly interiors starts right here. Bangalore's trusted interior design and renovation experts.">
-  <meta name="keywords" content="interior design bangalore, personalized furniture, walk-in wardrobes, house painting, bathroom renovation, wallpapers, sliding wardrobes">
+  <meta name="description" content="Echoes Interior Solutions - Bangalore's premier interior design studio. Transform your space with bespoke designs, custom furniture & expert craftsmanship.">
+  <meta name="keywords" content="interior design bangalore, luxury interiors, custom furniture, walk-in wardrobes, house painting, bathroom renovation">
   <meta name="author" content="Echoes Interior Solutions">
   
   <!-- Open Graph -->
-  <meta property="og:title" content="Echoes Interior Solutions - Beautiful, Budget-Friendly Interiors">
-  <meta property="og:description" content="Transform your space with stylish, functional, and personalized interior design solutions in Bangalore">
+  <meta property="og:title" content="Echoes Interior Solutions - Premium Interior Design in Bangalore">
+  <meta property="og:description" content="Transform your space with bespoke designs, custom furniture & expert craftsmanship">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:url" content="https://echoesinterior.com">
   
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Echoes Interior Solutions">
-  <meta name="twitter:description" content="Beautiful, budget-friendly interior design in Bangalore">
-  
-  <title>Echoes Interior Solutions - Beautiful, Budget-Friendly Interiors | Bangalore</title>
+  <title>Echoes Interior Solutions | Premium Interior Design in Bangalore</title>
   
   <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <link rel="apple-touch-icon" href="assets/images/favicon.png">
-  
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
   
   <!-- Styles -->
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/icons.css">
+  
+  <!-- GSAP for animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
   
   <!-- Scripts -->
   <script src="js/theme-toggle.js"></script>
@@ -44,10 +38,10 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "InteriorDesigner",
     "name": "Echoes Interior Solutions",
-    "description": "Stylish, functional, and personalized interior design solutions in Bangalore",
-    "url": "https://yourdomain.com",
+    "description": "Premium interior design studio in Bangalore specializing in bespoke designs and custom furniture",
+    "url": "https://echoesinterior.com",
     "telephone": "+91 7899919673",
     "address": {
       "@type": "PostalAddress",
@@ -55,34 +49,36 @@
       "addressRegion": "Karnataka",
       "addressCountry": "IN"
     },
-    "priceRange": "$$",
+    "priceRange": "₹₹₹",
     "openingHours": "Mo-Sa 09:00-18:00"
   }
   </script>
 </head>
 <body>
   <!-- Header -->
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <nav class="navbar">
         <a href="index.html" class="navbar-brand">
-          <img src="assets/images/echoes-logo-horizontal.png" alt="Echoes Interior Solutions" style="height: 45px; width: auto;">
+          <img src="assets/images/echoes-logo-horizontal.png" alt="Echoes Interior Solutions">
         </a>
         
-        <ul class="navbar-nav">
-          <li><a href="index.html" class="navbar-link active">Home</a></li>
-          <li><a href="index.html#services" class="navbar-link">Services</a></li>
+        <ul class="navbar-nav" id="navbar-nav">
+          <li><a href="index.html" class="navbar-link">Home</a></li>
+          <li><a href="#services" class="navbar-link">Services</a></li>
           <li><a href="projects.html" class="navbar-link">Projects</a></li>
           <li><a href="about.html" class="navbar-link">About</a></li>
           <li><a href="contact.html" class="navbar-link">Contact</a></li>
-          <li>
-            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-              <span class="theme-toggle-slider"></span>
-            </button>
-          </li>
         </ul>
         
-        <button class="navbar-toggle" aria-label="Toggle navigation">
+        <div class="navbar-actions">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-toggle-slider"></span>
+          </button>
+          <a href="contact.html" class="btn btn-primary btn-sm">Get Quote</a>
+        </div>
+        
+        <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation">
           <span></span>
           <span></span>
           <span></span>
@@ -91,267 +87,455 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-background">
-      <img src="assets/images/hero-background.png" alt="Beautiful modern interior" loading="eager">
-    </div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content" data-animate>
-      <h1 class="hero-title">Welcome to Echoes Interior Solutions</h1>
-      <p class="hero-subtitle">
-        Your journey to beautiful, budget-friendly interiors starts right here.
-      </p>
-      <div class="hero-cta">
-        <a href="contact.html" class="btn btn-primary btn-lg">Get Free Consultation</a>
-        <a href="tel:+917899919673" class="btn btn-outline btn-lg" style="color: white; border-color: white;">Call +91 7899919673</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Preview -->
-  <section id="services" class="section">
-    <div class="container">
-      <div class="text-center" style="margin-bottom: var(--space-12);" data-animate>
-        <h2>Our Services</h2>
-        <p style="max-width: 700px; margin: 0 auto; font-size: var(--text-lg); color: var(--color-text-secondary);">
-          From stylish interiors to functional renovations, we bring your vision to life—without breaking the bank.
-        </p>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-background">
+        <img src="assets/images/hero-background.png" alt="" loading="eager">
       </div>
       
-      <div class="grid grid-cols-3 gap-6">
-        <!-- Interior Design -->
-        <div class="service-card" data-animate>
-          <div class="service-card-content">
-            <div class="icon-bg icon-bg-warm" style="width: 64px; height: 64px; margin-bottom: var(--space-6);">
-              <svg class="icon-xl" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-              </svg>
-            </div>
-            <h3 class="service-card-title">Interior Design</h3>
-            <p class="service-card-description">
-              Modern minimalism to timeless elegance—every home reflects its owner's unique personality.
+      <div class="container hero-content">
+        <div class="hero-inner">
+          <div class="hero-text" data-animate>
+            <span class="hero-eyebrow">Bangalore's Premier Design Studio</span>
+            <h1 class="hero-title">
+              <span>Crafting</span>
+              <span class="accent">Extraordinary</span>
+              <span>Spaces</span>
+            </h1>
+            <p class="hero-description">
+              Transform your vision into reality with our bespoke interior design solutions. 
+              From concept to completion, we create spaces that inspire and elevate everyday living.
             </p>
-            <a href="services/painting.html" class="btn btn-primary">Learn More</a>
+            <div class="hero-cta">
+              <a href="contact.html" class="btn btn-accent btn-lg">Start Your Project</a>
+              <a href="tel:+917899919673" class="btn btn-outline btn-lg">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                +91 789 991 9673
+              </a>
+            </div>
+            
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <div class="hero-stat-number">250+</div>
+                <div class="hero-stat-label">Projects Delivered</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-number">5+</div>
+                <div class="hero-stat-label">Years Experience</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-number">98%</div>
+                <div class="hero-stat-label">Happy Clients</div>
+              </div>
+            </div>
           </div>
-        </div>
-        
-        <!-- Personalized Furniture -->
-        <div class="service-card" data-animate>
-          <div class="service-card-content">
-            <div class="icon-bg icon-bg-warm" style="width: 64px; height: 64px; margin-bottom: var(--space-6);">
-              <svg class="icon-xl" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-              </svg>
+          
+          <div class="hero-visual" data-animate data-animate-delay="2">
+            <div class="hero-image-wrapper">
+              <img src="assets/images/hero-background.png" alt="Luxury Interior Design" class="hero-image">
             </div>
-            <h3 class="service-card-title">Personalized Furniture</h3>
-            <p class="service-card-description">
-              Custom furniture designed to fit your space, style, and budget perfectly.
-            </p>
-            <a href="services/painting.html" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-        
-        <!-- Wardrobes -->
-        <div class="service-card" data-animate>
-          <div class="service-card-content">
-            <div class="icon-bg icon-bg-warm" style="width: 64px; height: 64px; margin-bottom: var(--space-6);">
-              <svg class="icon-xl" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h4a1 1 0 011 1v7a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v7a1 1 0 01-1 1h-4a1 1 0 01-1-1V5z" />
-              </svg>
+            <div class="hero-floating-card card-1">
+              <div class="flex items-center gap-3">
+                <div class="icon-box-sm">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                    <path d="M2 17l10 5 10-5"/>
+                    <path d="M2 12l10 5 10-5"/>
+                  </svg>
+                </div>
+                <div>
+                  <div style="font-weight: 600; font-size: 13px;">3D Visualization</div>
+                  <div style="font-size: 11px; color: var(--color-text-tertiary);">See before you build</div>
+                </div>
+              </div>
             </div>
-            <h3 class="service-card-title">Walk-in & Sliding Wardrobes</h3>
-            <p class="service-card-description">
-              Maximize storage with elegant walk-in and space-saving sliding wardrobe solutions.
-            </p>
-            <a href="services/painting.html" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-        
-        <!-- House Painting -->
-        <div class="service-card" data-animate>
-          <div class="service-card-content">
-            <div class="icon-bg icon-bg-warm" style="width: 64px; height: 64px; margin-bottom: var(--space-6);">
-              <svg class="icon-xl" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
-              </svg>
+            <div class="hero-floating-card card-2">
+              <div class="flex items-center gap-3">
+                <div class="icon-box-sm">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </div>
+                <div>
+                  <div style="font-weight: 600; font-size: 13px;">Quality Assured</div>
+                  <div style="font-size: 11px; color: var(--color-text-tertiary);">Premium materials</div>
+                </div>
+              </div>
             </div>
-            <h3 class="service-card-title">House Painting</h3>
-            <p class="service-card-description">
-              Expert interior and exterior wall painting services that speak style and elegance.
-            </p>
-            <a href="services/painting.html" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-        
-        <!-- Bathroom Renovation -->
-        <div class="service-card" data-animate>
-          <div class="service-card-content">
-            <div class="icon-bg icon-bg-warm" style="width: 64px; height: 64px; margin-bottom: var(--space-6);">
-              <svg class="icon-xl" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-              </svg>
-            </div>
-            <h3 class="service-card-title">Bathroom Renovation</h3>
-            <p class="service-card-description">
-              Transform your bathroom into a spa-like retreat with our renovation expertise.
-            </p>
-            <a href="services/waterproofing.html" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-        
-        <!-- Wallpapers -->
-        <div class="service-card" data-animate>
-          <div class="service-card-content">
-            <div class="icon-bg icon-bg-warm" style="width: 64px; height: 64px; margin-bottom: var(--space-6);">
-              <svg class="icon-xl" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-            </div>
-            <h3 class="service-card-title">Designer Wallpapers</h3>
-            <p class="service-card-description">
-              Add character and depth to your walls with our curated wallpaper collection.
-            </p>
-            <a href="services/painting.html" class="btn btn-primary">Learn More</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Why Choose Us -->
-  <section id="why-choose-us" class="section" style="background: var(--color-surface);">
-    <div class="container">
-      <div class="text-center" style="margin-bottom: var(--space-12);" data-animate>
-        <h2>Why Choose Echoes?</h2>
-        <p style="max-width: 700px; margin: 0 auto; font-size: var(--text-lg); color: var(--color-text-secondary);">
-          We make high-quality interiors accessible to everyone with cost-efficient planning and personalized designs.
-        </p>
-      </div>
-      
-      <div class="grid grid-cols-3 gap-8">
-        <!-- Budget-Friendly -->
-        <div class="card text-center" data-animate>
-          <div class="icon-bg icon-bg-warm" style="width: 80px; height: 80px; margin: 0 auto var(--space-6); box-shadow: var(--shadow-lg);">
-            <svg class="icon-2xl" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          </div>
-          <h4>Budget-Friendly</h4>
-          <p style="color: var(--color-text-secondary);">High-quality interiors that don't break the bank. Transparent pricing with no hidden costs.</p>
-        </div>
-        
-        <!-- Personalized Design -->
-        <div class="card text-center" data-animate>
-          <div class="icon-bg icon-bg-warm" style="width: 80px; height: 80px; margin: 0 auto var(--space-6); box-shadow: var(--shadow-lg);">
-            <svg class="icon-2xl" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-            </svg>
-          </div>
-          <h4>Personalized Design</h4>
-          <p style="color: var(--color-text-secondary);">Every space reflects your unique personality and lifestyle. We listen, design, and deliver.</p>
-        </div>
-        
-        <!-- Expert Team -->
-        <div class="card text-center" data-animate>
-          <div class="icon-bg icon-bg-warm" style="width: 80px; height: 80px; margin: 0 auto var(--space-6); box-shadow: var(--shadow-lg);">
-            <svg class="icon-2xl" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-            </svg>
-          </div>
-          <h4>Expert Craftsmanship</h4>
-          <p style="color: var(--color-text-secondary);">Seamless execution with emphasis on quality, detail, and timely delivery.</p>
-        </div>
+    <!-- Marquee Section -->
+    <div class="marquee">
+      <div class="marquee-content">
+        <div class="marquee-item">Interior Design <span>✦</span></div>
+        <div class="marquee-item">Custom Furniture <span>✦</span></div>
+        <div class="marquee-item">Walk-in Wardrobes <span>✦</span></div>
+        <div class="marquee-item">House Painting <span>✦</span></div>
+        <div class="marquee-item">Bathroom Renovation <span>✦</span></div>
+        <div class="marquee-item">Designer Wallpapers <span>✦</span></div>
+        <div class="marquee-item">Interior Design <span>✦</span></div>
+        <div class="marquee-item">Custom Furniture <span>✦</span></div>
+        <div class="marquee-item">Walk-in Wardrobes <span>✦</span></div>
+        <div class="marquee-item">House Painting <span>✦</span></div>
       </div>
     </div>
-  </section>
 
-  <!-- Testimonials -->
-  <section id="testimonials" class="section">
-    <div class="container container-narrow">
-      <div class="text-center" style="margin-bottom: var(--space-12);" data-animate>
-        <h2>What Our Clients Say</h2>
-        <p style="max-width: 700px; margin: var(--space-4) auto 0; font-size: var(--text-lg); color: var(--color-text-secondary);">
-          Real feedback from satisfied customers
-        </p>
-      </div>
-      
-      <div class="grid grid-cols-1 gap-6">
-        <div class="card" data-animate>
-          <div style="display: flex; gap: var(--space-3); margin-bottom: var(--space-4);">
-            <div style="color: var(--color-accent-warm); font-size: var(--text-xl);">★★★★★</div>
-          </div>
-          <p style="font-size: var(--text-lg); margin-bottom: var(--space-4);">
-            "Echoes transformed our home beautifully! The team understood our vision perfectly and delivered within our budget. Highly recommended!"
-          </p>
-          <div style="font-weight: var(--weight-semibold);">Priya Sharma</div>
-          <div style="color: var(--color-text-tertiary); font-size: var(--text-sm);">Homeowner, Bangalore</div>
+    <!-- Services Section -->
+    <section id="services" class="section section-lg" style="background: var(--color-bg-secondary);">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-label">What We Offer</span>
+          <h2>Transforming Spaces,<br>Elevating Lives</h2>
+          <p>From contemporary minimalism to timeless elegance, we craft interiors that reflect your unique personality while maximizing functionality.</p>
         </div>
         
-        <div class="card" data-animate>
-          <div style="display: flex; gap: var(--space-3); margin-bottom: var(--space-4);">
-            <div style="color: var(--color-accent-warm); font-size: var(--text-xl);">★★★★★</div>
+        <div class="grid grid-cols-3 gap-6">
+          <!-- Service 1 -->
+          <div class="service-card" data-animate data-animate-delay="1">
+            <div style="overflow: hidden; height: 200px; background: linear-gradient(135deg, #1A1A1A 0%, #0C0C0C 100%); position: relative;">
+              <div style="position: absolute; inset: 0; background: var(--gradient-gold); opacity: 0.1;"></div>
+              <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5">
+                  <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-card-content">
+              <span class="service-card-badge">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg>
+                Full Service
+              </span>
+              <h3>Interior Design</h3>
+              <p>Complete interior design solutions from concept to execution. Modern, minimalist, or classic - we bring your vision to life.</p>
+              <a href="services/painting.html" class="btn btn-outline btn-sm">Explore Service</a>
+            </div>
           </div>
-          <p style="font-size: var(--text-lg); margin-bottom: var(--space-4);">
-            "Professional service from start to finish. The custom wardrobe design is exactly what we needed. Great attention to detail!"
-          </p>
-          <div style="font-weight: var(--weight-semibold);">Rajesh Kumar</div>
-          <div style="color: var(--color-text-tertiary); font-size: var(--text-sm);">Apartment Owner</div>
+          
+          <!-- Service 2 -->
+          <div class="service-card" data-animate data-animate-delay="2">
+            <div style="overflow: hidden; height: 200px; background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-hover) 100%); position: relative;">
+              <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#0C0C0C" stroke-width="1.5">
+                  <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-card-content">
+              <span class="service-card-badge">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg>
+                Custom Made
+              </span>
+              <h3>Personalized Furniture</h3>
+              <p>Handcrafted furniture designed specifically for your space. Every piece is unique, functional, and built to last.</p>
+              <a href="services/painting.html" class="btn btn-outline btn-sm">Explore Service</a>
+            </div>
+          </div>
+          
+          <!-- Service 3 -->
+          <div class="service-card" data-animate data-animate-delay="3">
+            <div style="overflow: hidden; height: 200px; background: linear-gradient(135deg, #5B8A9A 0%, #4A7A8A 100%); position: relative;">
+              <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+                  <rect x="3" y="3" width="7" height="18" rx="1"/>
+                  <rect x="14" y="3" width="7" height="18" rx="1"/>
+                  <line x1="6.5" y1="8" x2="6.5" y2="12"/>
+                  <line x1="17.5" y1="8" x2="17.5" y2="12"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-card-content">
+              <span class="service-card-badge">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg>
+                Premium Storage
+              </span>
+              <h3>Walk-in Wardrobes</h3>
+              <p>Luxurious walk-in and sliding wardrobes with intelligent organization systems. Maximize space elegantly.</p>
+              <a href="services/painting.html" class="btn btn-outline btn-sm">Explore Service</a>
+            </div>
+          </div>
+          
+          <!-- Service 4 -->
+          <div class="service-card" data-animate data-animate-delay="1">
+            <div style="overflow: hidden; height: 200px; background: linear-gradient(135deg, #C4846C 0%, #A76B55 100%); position: relative;">
+              <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+                  <path d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-card-content">
+              <span class="service-card-badge">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg>
+                Professional
+              </span>
+              <h3>House Painting</h3>
+              <p>Expert interior and exterior painting services. Premium paints, flawless finishes, and color consultation included.</p>
+              <a href="services/painting.html" class="btn btn-outline btn-sm">Explore Service</a>
+            </div>
+          </div>
+          
+          <!-- Service 5 -->
+          <div class="service-card" data-animate data-animate-delay="2">
+            <div style="overflow: hidden; height: 200px; background: linear-gradient(135deg, #8B9A7D 0%, #6B7A5D 100%); position: relative;">
+              <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+                  <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-card-content">
+              <span class="service-card-badge">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg>
+                Renovation
+              </span>
+              <h3>Bathroom Renovation</h3>
+              <p>Transform your bathroom into a spa-like retreat. Complete renovation with waterproofing and premium fixtures.</p>
+              <a href="services/waterproofing.html" class="btn btn-outline btn-sm">Explore Service</a>
+            </div>
+          </div>
+          
+          <!-- Service 6 -->
+          <div class="service-card" data-animate data-animate-delay="3">
+            <div style="overflow: hidden; height: 200px; background: linear-gradient(135deg, #D4A5A5 0%, #B48585 100%); position: relative;">
+              <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#0C0C0C" stroke-width="1.5">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                  <path d="M3 9h18"/>
+                  <path d="M9 3v18"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-card-content">
+              <span class="service-card-badge">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg>
+                Designer
+              </span>
+              <h3>Wallpapers & Textures</h3>
+              <p>Curated collection of designer wallpapers and textured finishes. Add character and depth to any space.</p>
+              <a href="services/painting.html" class="btn btn-outline btn-sm">Explore Service</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA Section -->
-  <section class="section gradient-animated" style="background: linear-gradient(135deg, var(--color-brand-charcoal), var(--color-accent-warm)); color: white; text-align: center;">
-    <div class="container container-narrow" data-animate>
-      <h2 style="color: white; font-size: var(--text-4xl); margin-bottom: var(--space-6);">
-        Ready to Transform Your Space?
-      </h2>
-      <p style="font-size: var(--text-xl); margin-bottom: var(--space-8); color: rgba(255, 255, 255, 0.9);">
-        DM us for consultations! Let's turn your vision into a stylish, functional reality.
-      </p>
-      <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
-        <a href="contact.html" class="btn btn-lg" style="background: white; color: var(--color-brand-charcoal);">Get Free Consultation</a>
-        <a href="tel:+917899919673" class="btn btn-outline btn-lg" style="border-color: white; color: white;">Call +91 7899919673</a>
-        <a href="https://wa.me/917975677058" target="_blank" class="btn btn-outline btn-lg" style="border-color: white; color: white;">WhatsApp Us</a>
+    <!-- Why Choose Us Section -->
+    <section class="section section-lg">
+      <div class="container">
+        <div class="grid grid-cols-2 gap-12" style="align-items: center;">
+          <div data-animate>
+            <span class="section-label">Why Echoes</span>
+            <h2 style="margin-top: var(--space-3); margin-bottom: var(--space-5);">Design Excellence<br>Meets Affordability</h2>
+            <p class="lead" style="margin-bottom: var(--space-6); font-size: var(--text-base); color: var(--color-text-secondary); line-height: var(--leading-relaxed);">
+              We believe everyone deserves a beautiful home. That's why we combine world-class design with cost-efficient planning, delivering premium interiors without the premium price tag.
+            </p>
+            
+            <div class="flex flex-col gap-4">
+              <div class="flex items-start gap-4">
+                <div class="icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 style="margin-bottom: var(--space-1); font-size: var(--text-base);">Transparent Pricing</h4>
+                  <p style="color: var(--color-text-secondary); font-size: var(--text-sm);">No hidden costs, no surprises. Get a detailed quote upfront with itemized breakdowns.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start gap-4">
+                <div class="icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 style="margin-bottom: var(--space-1); font-size: var(--text-base);">Quality Guaranteed</h4>
+                  <p style="color: var(--color-text-secondary); font-size: var(--text-sm);">Premium materials and expert craftsmanship backed by our satisfaction guarantee.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start gap-4">
+                <div class="icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 style="margin-bottom: var(--space-1); font-size: var(--text-base);">On-Time Delivery</h4>
+                  <p style="color: var(--color-text-secondary); font-size: var(--text-sm);">We respect your time. Projects completed on schedule, every time.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="grid grid-cols-2 gap-4" data-animate data-animate-delay="2">
+            <div class="stat-card card">
+              <div class="stat-number">250+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-card card">
+              <div class="stat-number">200+</div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-card card">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Years</div>
+            </div>
+            <div class="stat-card card">
+              <div class="stat-number">98%</div>
+              <div class="stat-label">Satisfaction</div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section section-lg" style="background: var(--color-bg-secondary);">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-label">Client Stories</span>
+          <h2>Loved by Homeowners<br>Across Bangalore</h2>
+          <p>Don't just take our word for it. Here's what our clients have to say about their transformation journey with Echoes.</p>
+        </div>
+        
+        <div class="grid grid-cols-2 gap-6">
+          <div class="testimonial-card" data-animate data-animate-delay="1">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-content">
+              "Echoes transformed our 3BHK apartment into a stunning modern home. The team understood our vision perfectly and delivered beyond expectations. The attention to detail and quality of work is exceptional!"
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">PS</div>
+              <div class="testimonial-info">
+                <h4>Priya Sharma</h4>
+                <p>Homeowner, Koramangala</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card" data-animate data-animate-delay="2">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-content">
+              "Professional service from consultation to completion. The custom wardrobe design exceeded our expectations - perfect use of space with premium finishes. Highly recommend their team!"
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">RK</div>
+              <div class="testimonial-info">
+                <h4>Rajesh Kumar</h4>
+                <p>Apartment Owner, HSR Layout</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section section-lg">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-label">How We Work</span>
+          <h2>From Concept to<br>Completion</h2>
+          <p>Our streamlined process ensures your project is delivered on time, on budget, and exceeds your expectations.</p>
+        </div>
+        
+        <div class="grid grid-cols-4 gap-4">
+          <div class="feature-card card" data-animate data-animate-delay="1">
+            <div style="font-family: var(--font-heading); font-size: var(--text-4xl); font-weight: var(--weight-bold); color: var(--color-accent); opacity: 0.25; margin-bottom: var(--space-3);">01</div>
+            <h3>Consultation</h3>
+            <p>Free consultation to understand your vision, requirements, and budget.</p>
+          </div>
+          
+          <div class="feature-card card" data-animate data-animate-delay="2">
+            <div style="font-family: var(--font-heading); font-size: var(--text-4xl); font-weight: var(--weight-bold); color: var(--color-accent); opacity: 0.25; margin-bottom: var(--space-3);">02</div>
+            <h3>Design</h3>
+            <p>Detailed plans and 3D visualizations so you can see your space before we build.</p>
+          </div>
+          
+          <div class="feature-card card" data-animate data-animate-delay="3">
+            <div style="font-family: var(--font-heading); font-size: var(--text-4xl); font-weight: var(--weight-bold); color: var(--color-accent); opacity: 0.25; margin-bottom: var(--space-3);">03</div>
+            <h3>Execution</h3>
+            <p>Expert craftsmen bring the design to life with premium materials.</p>
+          </div>
+          
+          <div class="feature-card card" data-animate data-animate-delay="4">
+            <div style="font-family: var(--font-heading); font-size: var(--text-4xl); font-weight: var(--weight-bold); color: var(--color-accent); opacity: 0.25; margin-bottom: var(--space-3);">04</div>
+            <h3>Handover</h3>
+            <p>Final walkthrough and quality check. We ensure everything is perfect.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content" data-animate>
+          <span class="section-label" style="color: var(--color-accent); justify-content: center;">Ready to Transform?</span>
+          <h2 style="margin-top: var(--space-3);">Let's Create Your<br>Dream Space Together</h2>
+          <p>Book a free consultation and take the first step towards your beautifully designed home.</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn btn-accent btn-lg">Get Free Consultation</a>
+            <a href="https://wa.me/917975677058" target="_blank" class="btn btn-outline btn-lg" style="border-color: rgba(255,255,255,0.25); color: var(--color-text-primary);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-content">
-        <!-- Company Info -->
-        <div class="footer-section">
-          <h4>Echoes Interior Solutions</h4>
-          <p style="color: var(--color-text-secondary); margin-bottom: var(--space-4);">
-            Your journey to beautiful, budget-friendly interiors starts right here.
-          </p>
-          <div style="color: var(--color-text-secondary);">
-            <p>📍 Bangalore, India</p>
-            <p>📞 +91 7899919673</p>
-            <p>📞 +91 7975677058</p>
-            <p>✉️ info@echoesinterior.com</p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/echoes-logo-horizontal.png" alt="Echoes Interior Solutions">
+          <p>Your journey to beautiful, budget-friendly interiors starts here. We transform spaces into personalized havens that reflect your unique style.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/echoes_interior/" target="_blank" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/917975677058" target="_blank" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </a>
+            <a href="tel:+917899919673" aria-label="Phone">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </a>
           </div>
         </div>
         
-        <!-- Quick Links -->
-        <div class="footer-section">
+        <div class="footer-nav">
           <h4>Services</h4>
           <div class="footer-links">
             <a href="services/painting.html" class="footer-link">Interior Design</a>
-            <a href="services/painting.html" class="footer-link">Personalized Furniture</a>
+            <a href="services/painting.html" class="footer-link">Custom Furniture</a>
             <a href="services/painting.html" class="footer-link">Wardrobes</a>
             <a href="services/painting.html" class="footer-link">House Painting</a>
             <a href="services/waterproofing.html" class="footer-link">Bathroom Renovation</a>
-            <a href="services/painting.html" class="footer-link">Wallpapers</a>
           </div>
         </div>
         
-        <!-- Company -->
-        <div class="footer-section">
+        <div class="footer-nav">
           <h4>Company</h4>
           <div class="footer-links">
             <a href="about.html" class="footer-link">About Us</a>
@@ -361,19 +545,20 @@
           </div>
         </div>
         
-        <!-- Business Hours -->
-        <div class="footer-section">
-          <h4>Business Hours</h4>
-          <div style="color: var(--color-text-secondary);">
-            <p>Monday - Saturday: 9:00 AM - 6:00 PM</p>
-            <p>Sunday: By Appointment</p>
-            <p style="margin-top: var(--space-4); font-style: italic;">#EchoesInteriorSolutions #InteriorDesignBangalore</p>
+        <div class="footer-nav">
+          <h4>Contact</h4>
+          <div class="footer-links">
+            <span class="footer-link">Bangalore, Karnataka</span>
+            <a href="tel:+917899919673" class="footer-link">+91 789 991 9673</a>
+            <a href="tel:+917975677058" class="footer-link">+91 797 567 7058</a>
+            <a href="mailto:info@echoesinterior.com" class="footer-link">info@echoesinterior.com</a>
           </div>
         </div>
       </div>
       
       <div class="footer-bottom">
-        <p>&copy; 2024 Echoes Interior Solutions. All rights reserved.</p>
+        <p class="footer-copyright">© 2024 Echoes Interior Solutions. All rights reserved.</p>
+        <p class="footer-copyright">Mon - Sat: 9:00 AM - 6:00 PM</p>
       </div>
     </div>
   </footer>

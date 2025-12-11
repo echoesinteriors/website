@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" fill="none">
+  <g fill="currentColor">
+    <!-- Arc waves -->
+    <path d="M8 40c0-17.673 14.327-32 32-32v6c-14.36 0-26 11.64-26 26H8z"/>
+    <path d="M18 40c0-12.15 9.85-22 22-22v6c-8.837 0-16 7.163-16 16h-6z"/>
+    <path d="M28 40c0-6.627 5.373-12 12-12v6c-3.314 0-6 2.686-6 6h-6z"/>
+    <!-- E shape in center -->
+    <path d="M36 28h8v24h-8V28z"/>
+    <path d="M36 28h20v6H36v-6z"/>
+    <path d="M36 37h16v6H36v-6z"/>
+    <path d="M36 46h20v6H36v-6z"/>
+    <!-- Vertical bar -->
+    <path d="M52 8h6v44h-6V8z"/>
+  </g>
+  <!-- Text -->
+  <text x="72" y="36" font-family="Poppins, sans-serif" font-size="24" font-weight="600" fill="currentColor">ECHOES</text>
+  <text x="72" y="54" font-family="Inter, sans-serif" font-size="10" font-weight="400" letter-spacing="0.15em" fill="currentColor">INTERIOR SOLUTIONS</text>
+</svg>
+
